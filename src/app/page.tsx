@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-zinc-100">
+    <div className="min-h-screen bg-transparent text-zinc-100">
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800/50 bg-[#0a0a0a]/80 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           <Link href="/" className="text-xl font-semibold tracking-tight">
-            get-abyss<span className="text-cyan-400">.app</span>
+            get-abyss<span className="text-zinc-400">.app</span>
           </Link>
           <a
             href="https://github.com/beeler-devs/GetAbyss"
@@ -22,14 +22,13 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative overflow-hidden px-6 pt-32 pb-24">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(34,211,238,0.12),transparent)]" />
         <div className="relative mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-cyan-400/90">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-400">
             VoiceIDE
           </p>
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             One voice. Code, email, calendar{" "}
-            <span className="text-cyan-400">— and more.</span>
+            <span className="text-zinc-300">— and more.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-zinc-400">
             Your voice-first assistant — for coding, email, calendar, and more.
@@ -46,8 +45,8 @@ export default function Home() {
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
             {/* Developer Column */}
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-8 transition-colors hover:border-cyan-500/30">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-400">
+            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8">
+              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800/80 text-zinc-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -68,27 +67,27 @@ export default function Home() {
               </h3>
               <ul className="space-y-3 text-zinc-400">
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">→</span>
+                  <span className="text-zinc-500">→</span>
                   Code editing & file operations
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">→</span>
+                  <span className="text-zinc-500">→</span>
                   Git commands & version control
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">→</span>
+                  <span className="text-zinc-500">→</span>
                   Browser automation
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">→</span>
+                  <span className="text-zinc-500">→</span>
                   Project search & Cursor agents
                 </li>
               </ul>
             </div>
 
             {/* Personal Column */}
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-8 transition-colors hover:border-cyan-500/30">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-400">
+            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8">
+              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800/80 text-zinc-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -118,15 +117,15 @@ export default function Home() {
               </h3>
               <ul className="space-y-3 text-zinc-400">
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">→</span>
+                  <span className="text-zinc-500">→</span>
                   Email — scan, send, summarize
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">→</span>
+                  <span className="text-zinc-500">→</span>
                   Google Calendar — list, create, update
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-cyan-400">→</span>
+                  <span className="text-zinc-500">→</span>
                   Notes, reminders, tasks (coming soon)
                 </li>
               </ul>
@@ -142,8 +141,8 @@ export default function Home() {
             Roadmap
           </h2>
           <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-            <div className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900/20 p-8">
-              <span className="mb-4 inline-block rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-400">
+            <div className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8">
+              <span className="mb-4 inline-block rounded-full bg-zinc-800 px-3 py-1 text-xs font-medium text-zinc-300">
                 Phase 1
               </span>
               <h3 className="mb-2 text-lg font-semibold text-zinc-100">
@@ -155,11 +154,11 @@ export default function Home() {
               </p>
             </div>
             <div className="hidden shrink-0 self-center md:block">
-              <div className="h-px w-12 bg-gradient-to-r from-cyan-500/50 to-transparent" />
-              <div className="mx-auto h-2 w-2 rounded-full bg-cyan-500/50" />
+              <div className="h-px w-12 bg-gradient-to-r from-zinc-600 to-transparent" />
+              <div className="mx-auto h-2 w-2 rounded-full bg-zinc-600" />
             </div>
-            <div className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900/20 p-8">
-              <span className="mb-4 inline-block rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-400">
+            <div className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8">
+              <span className="mb-4 inline-block rounded-full bg-zinc-800 px-3 py-1 text-xs font-medium text-zinc-300">
                 Phase 2
               </span>
               <h3 className="mb-2 text-lg font-semibold text-zinc-100">
@@ -171,11 +170,11 @@ export default function Home() {
               </p>
             </div>
             <div className="hidden shrink-0 self-center md:block">
-              <div className="h-px w-12 bg-gradient-to-r from-cyan-500/50 to-transparent" />
-              <div className="mx-auto h-2 w-2 rounded-full bg-cyan-500/50" />
+              <div className="h-px w-12 bg-gradient-to-r from-zinc-600 to-transparent" />
+              <div className="mx-auto h-2 w-2 rounded-full bg-zinc-600" />
             </div>
-            <div className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900/20 p-8">
-              <span className="mb-4 inline-block rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-400">
+            <div className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8">
+              <span className="mb-4 inline-block rounded-full bg-zinc-800 px-3 py-1 text-xs font-medium text-zinc-300">
                 Phase 3
               </span>
               <h3 className="mb-2 text-lg font-semibold text-zinc-100">
@@ -214,7 +213,7 @@ export default function Home() {
               href="https://github.com/beeler-devs/GetAbyss"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-zinc-500 transition-colors hover:text-cyan-400"
+              className="text-sm text-zinc-500 transition-colors hover:text-zinc-300"
             >
               GitHub
             </a>
