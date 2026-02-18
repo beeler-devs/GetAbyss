@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "Abyss | Voice-First Assistant for Code, Email & Calendar",
   description:
     "Your voice-first assistant — for coding, email, calendar, and more. From coding assistant to full personal productivity — all by voice.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
