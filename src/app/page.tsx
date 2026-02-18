@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-transparent text-zinc-100">
       {/* Nav — liquid glass floating bar */}
-      <nav className="fixed top-6 left-1/2 z-50 -translate-x-1/2 rounded-full border border-white/10 bg-white/5 px-6 py-3 shadow-[0_0_0_1px_rgba(255,255,255,0.05)_inset,0_8px_32px_-8px_rgba(0,0,0,0.5)] backdrop-blur-2xl">
+      <nav className="fixed top-6 left-1/2 z-50 -translate-x-1/2 rounded-full border border-white/[0.06] bg-white/[0.015] px-6 py-3 shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset,0_4px_24px_-4px_rgba(0,0,0,0.25)] backdrop-blur-xl">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center gap-2.5 text-lg font-semibold tracking-tight">
             <Image src="/logo.png" alt="Abyss" width={28} height={28} className="rounded-lg" />
@@ -47,8 +47,8 @@ export default function Home() {
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
             {/* Developer Column */}
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.05)_inset,0_8px_32px_-8px_rgba(0,0,0,0.5)] backdrop-blur-2xl">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-white/5 text-zinc-300">
+            <div className="rounded-2xl border border-white/[0.06] bg-white/[0.015] p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset,0_4px_24px_-4px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.015] text-zinc-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -88,8 +88,8 @@ export default function Home() {
             </div>
 
             {/* Personal Column */}
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.05)_inset,0_8px_32px_-8px_rgba(0,0,0,0.5)] backdrop-blur-2xl">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-white/5 text-zinc-300">
+            <div className="rounded-2xl border border-white/[0.06] bg-white/[0.015] p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset,0_4px_24px_-4px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.015] text-zinc-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -143,8 +143,8 @@ export default function Home() {
             Roadmap
           </h2>
           <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-            <div className="flex-1 rounded-2xl border border-white/10 bg-white/5 p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.05)_inset,0_8px_32px_-8px_rgba(0,0,0,0.5)] backdrop-blur-2xl">
-              <span className="mb-4 inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-zinc-300">
+            <div className="flex-1 rounded-2xl border border-white/[0.06] bg-white/[0.015] p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset,0_4px_24px_-4px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+              <span className="mb-4 inline-block rounded-full bg-white/[0.04] px-3 py-1 text-xs font-medium text-zinc-300">
                 Phase 1
               </span>
               <h3 className="mb-2 text-lg font-semibold text-zinc-100">
@@ -159,8 +159,8 @@ export default function Home() {
               <div className="h-px w-12 bg-gradient-to-r from-white/20 to-transparent" />
               <div className="mx-auto h-2 w-2 rounded-full bg-white/20" />
             </div>
-            <div className="flex-1 rounded-2xl border border-white/10 bg-white/5 p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.05)_inset,0_8px_32px_-8px_rgba(0,0,0,0.5)] backdrop-blur-2xl">
-              <span className="mb-4 inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-zinc-300">
+            <div className="flex-1 rounded-2xl border border-white/[0.06] bg-white/[0.015] p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset,0_4px_24px_-4px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+              <span className="mb-4 inline-block rounded-full bg-white/[0.04] px-3 py-1 text-xs font-medium text-zinc-300">
                 Phase 2
               </span>
               <h3 className="mb-2 text-lg font-semibold text-zinc-100">
@@ -175,8 +175,8 @@ export default function Home() {
               <div className="h-px w-12 bg-gradient-to-r from-white/20 to-transparent" />
               <div className="mx-auto h-2 w-2 rounded-full bg-white/20" />
             </div>
-            <div className="flex-1 rounded-2xl border border-white/10 bg-white/5 p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.05)_inset,0_8px_32px_-8px_rgba(0,0,0,0.5)] backdrop-blur-2xl">
-              <span className="mb-4 inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-zinc-300">
+            <div className="flex-1 rounded-2xl border border-white/[0.06] bg-white/[0.015] p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset,0_4px_24px_-4px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+              <span className="mb-4 inline-block rounded-full bg-white/[0.04] px-3 py-1 text-xs font-medium text-zinc-300">
                 Phase 3
               </span>
               <h3 className="mb-2 text-lg font-semibold text-zinc-100">
@@ -194,7 +194,7 @@ export default function Home() {
       {/* Vision */}
       <section className="border-t border-zinc-800/50 px-6 py-24">
         <div className="mx-auto max-w-3xl">
-          <blockquote className="rounded-2xl border border-white/10 bg-white/5 px-8 py-10 text-center shadow-[0_0_0_1px_rgba(255,255,255,0.05)_inset,0_8px_32px_-8px_rgba(0,0,0,0.5)] backdrop-blur-2xl">
+          <blockquote className="rounded-2xl border border-white/[0.06] bg-white/[0.015] px-8 py-10 text-center shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset,0_4px_24px_-4px_rgba(0,0,0,0.25)] backdrop-blur-xl">
             <span className="text-2xl font-medium leading-relaxed text-zinc-200 sm:text-3xl">
               &ldquo;From coding assistant to full personal productivity — all by
               voice.&rdquo;
