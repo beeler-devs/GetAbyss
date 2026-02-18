@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VoiceIDE — Get Abyss | Voice-First Assistant for Code, Email & Calendar",
+  title: "Abyss | Voice-First Assistant for Code, Email & Calendar",
   description:
     "Your voice-first assistant — for coding, email, calendar, and more. From coding assistant to full personal productivity — all by voice.",
 };
