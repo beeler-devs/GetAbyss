@@ -14,13 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abyss | Voice-First Assistant for Code, Email & Calendar",
+  title: "Abyss | Voice-First OS for Coding and Productivity",
   description:
-    "Your voice-first assistant — for coding, email, calendar, and more. From coding assistant to full personal productivity — all by voice.",
-  icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
-  },
+    "Abyss is a voice-first operating layer for coding and personal workflows, with tool routing across iOS, server, macOS bridge, and cloud agents.",
 };
 
 export default function RootLayout({
