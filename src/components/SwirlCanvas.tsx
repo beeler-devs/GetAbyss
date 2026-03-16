@@ -133,6 +133,7 @@ function triangleWave(age: number, ttl: number): number {
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t
 const rand = (max: number) => Math.random() * max
 const TAU = 2 * Math.PI
+const PARTICLE_PROPS = ['x', 'y', 'vx', 'vy', 'a', 'l', 'ttl', 'vc', 'r', 'g', 'b']
 
 export function SwirlCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -144,8 +145,6 @@ export function SwirlCanvas() {
   const timeRef = useRef(0)
   const mouseRef = useRef({ x: 0, y: 0 })
   const boundsRef = useRef({ width: 0, height: 0, centerx: 0, centery: 0 })
-
-  const PROPS = ['x', 'y', 'vx', 'vy', 'a', 'l', 'ttl', 'vc', 'r', 'g', 'b']
 
   const spawn = (): number[] => {
     const { width, height, centerx, centery } = boundsRef.current
@@ -247,7 +246,7 @@ export function SwirlCanvas() {
     offscreenRef.current = document.createElement('canvas').getContext('2d')
     noiseRef.current = createSimplex()
     resize()
-    particlesRef.current = new ParticleStore(18000, PROPS.length)
+    particlesRef.current = new ParticleStore(18000, PARTICLE_PROPS.length)
     particlesRef.current.map(() => spawn())
 
     const ctx = canvas.getContext('2d')!
@@ -263,8 +262,8 @@ export function SwirlCanvas() {
       o.data.fill(0)
 
       particles.forEach((p, idx) => {
-        let [x, y, vx, vy, age, , ttl, vc, r, g, b] = p
-        age++
+        const [x, y, vx, vy, storedAge, , ttl, vc, r, g, b] = p
+        const age = storedAge + 1
         const alpha = 255 * triangleWave(age, ttl)
 
         if (age >= ttl || y < -100 || y > height + 100 || x < -100 || x > width + 100) {
