@@ -2,7 +2,10 @@
 
 **Abyss is a voice-first, iPhone-native AI assistant with secure local execution and coding as a flagship workflow.**
 
-Website for [get-abyss.app](https://get-abyss.app).
+## Related repositories
+
+- Core architecture + product development: https://github.com/beeler-devs/Abyss
+- This site + public entrypoint: https://github.com/beeler-devs/GetAbyss
 
 The landing page is product-facing and judge-oriented. It highlights:
 

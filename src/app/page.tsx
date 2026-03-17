@@ -168,12 +168,12 @@ export default function Home() {
             ))}
           </div>
           <a
-            href="https://github.com/beeler-devs/GetAbyss"
+            href="https://github.com/beeler-devs/Abyss"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-zinc-400 transition-colors hover:text-zinc-100"
           >
-            GitHub
+            Core GitHub
           </a>
         </div>
       </nav>
@@ -430,12 +430,20 @@ export default function Home() {
           </p>
           <div className="flex gap-6">
             <a
+              href="https://github.com/beeler-devs/Abyss"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-zinc-500 transition-colors hover:text-zinc-300"
+            >
+              Core Repo
+            </a>
+            <a
               href="https://github.com/beeler-devs/GetAbyss"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-zinc-500 transition-colors hover:text-zinc-300"
             >
-              GitHub
+              GetAbyss
             </a>
           </div>
         </div>
