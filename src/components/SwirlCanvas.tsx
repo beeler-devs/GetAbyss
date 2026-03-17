@@ -134,7 +134,6 @@ function triangleWave(age: number, ttl: number): number {
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t
 const rand = (max: number) => Math.random() * max
 const TAU = 2 * Math.PI
-const PARTICLE_PROPS = ['x', 'y', 'vx', 'vy', 'a', 'l', 'ttl', 'vc', 'r', 'g', 'b']
 
 export function SwirlCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
