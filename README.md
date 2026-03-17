@@ -1,8 +1,12 @@
-# Get Abyss — VoiceIDE
+# GetAbyss Website
 
-**Your voice-first assistant — for coding, email, calendar, and more.**
+Landing site for [get-abyss.app](https://get-abyss.app), updated to mirror the
+current state of the Abyss platform.
 
-Website for [get-abyss.app](https://get-abyss.app).
+## Related repositories
+
+- Core architecture + product development: https://github.com/beeler-devs/Abyss
+- This site + public entrypoint: https://github.com/beeler-devs/GetAbyss
 
 ## Run locally
 
