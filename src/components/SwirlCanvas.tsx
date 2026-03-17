@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react'
 /* Silver palette — cool metallic tones */
 const SILVER_PRIMARY = { r: 180, g: 182, b: 190 }  // cool silver
 const SILVER_BRIGHT = { r: 210, g: 212, b: 220 }  // bright silver
+const PARTICLE_PROPS = ['x', 'y', 'vx', 'vy', 'a', 'l', 'ttl', 'vc', 'r', 'g', 'b']
 
 function floor(x: number) {
   return x | 0
@@ -145,8 +146,6 @@ export function SwirlCanvas() {
   const mouseRef = useRef({ x: 0, y: 0 })
   const boundsRef = useRef({ width: 0, height: 0, centerx: 0, centery: 0 })
 
-  const PROPS = ['x', 'y', 'vx', 'vy', 'a', 'l', 'ttl', 'vc', 'r', 'g', 'b']
-
   const spawn = (): number[] => {
     const { width, height, centerx, centery } = boundsRef.current
     const edge = Math.floor(rand(4))
@@ -247,7 +246,7 @@ export function SwirlCanvas() {
     offscreenRef.current = document.createElement('canvas').getContext('2d')
     noiseRef.current = createSimplex()
     resize()
-    particlesRef.current = new ParticleStore(18000, PROPS.length)
+    particlesRef.current = new ParticleStore(18000, PARTICLE_PROPS.length)
     particlesRef.current.map(() => spawn())
 
     const ctx = canvas.getContext('2d')!
@@ -263,22 +262,22 @@ export function SwirlCanvas() {
       o.data.fill(0)
 
       particles.forEach((p, idx) => {
-        let [x, y, vx, vy, age, , ttl, vc, r, g, b] = p
-        age++
-        const alpha = 255 * triangleWave(age, ttl)
+        const [x, y, vx, vy, age, , ttl, vc, r, g, b] = p
+        const nextAge = age + 1
+        const alpha = 255 * triangleWave(nextAge, ttl)
 
-        if (age >= ttl || y < -100 || y > height + 100 || x < -100 || x > width + 100) {
+        if (nextAge >= ttl || y < -100 || y > height + 100 || x < -100 || x > width + 100) {
           particles.set(spawn(), idx)
           return
         }
 
         const [nx, ny, nvx, nvy] = advect(x, y, vx, vy, vc)
-        particles.set([nx, ny, nvx, nvy, age, 0, ttl, vc, r, g, b], idx)
+        particles.set([nx, ny, nvx, nvy, nextAge, 0, ttl, vc, r, g, b], idx)
 
         const ix = x | 0
         const iy = y | 0
         if (ix >= 0 && ix < width && iy >= 0 && iy < height) {
-          const lifeRatio = age / ttl
+          const lifeRatio = nextAge / ttl
           const speedFactor = Math.min(0.08 * Math.sqrt(nvx * nvx + nvy * nvy), 1)
           const blend = 0.4 * lifeRatio + 0.6 * speedFactor
           const extra = 8 * Math.sin(lifeRatio * Math.PI)

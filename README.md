@@ -1,8 +1,18 @@
-# Get Abyss — VoiceIDE
+# Get Abyss
 
-**Your voice-first assistant — for coding, email, calendar, and more.**
+**Abyss is a voice-first, iPhone-native AI assistant with secure local execution and coding as a flagship workflow.**
 
 Website for [get-abyss.app](https://get-abyss.app).
+
+The landing page is product-facing and judge-oriented. It highlights:
+
+- Voice-first interaction on iPhone
+- A TypeScript WebSocket conductor
+- A permissioned macOS bridge for privileged local actions
+- Coding workflows with Cursor Cloud Agents, terminal execution, file operations, and git actions
+- Gmail, Google Calendar, Canvas, and web search integrations
+- Inline transcript cards, multi-chat continuity, summaries, and optional memory infrastructure
+- Embedded architecture, data-flow, and infrastructure diagrams
 
 ## Run locally
 
@@ -19,7 +29,7 @@ Optimized for [Vercel](https://vercel.com). Connect this repo for automatic depl
 
 ## Tech
 
-- Next.js 15 (App Router)
+- Next.js 16 (App Router)
 - TypeScript
 - Tailwind CSS
-- Default dark mode
+- Animated dark-mode landing page with glass UI surfaces

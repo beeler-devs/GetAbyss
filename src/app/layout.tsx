@@ -14,9 +14,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abyss | Voice-First Assistant for Code, Email & Calendar",
+  metadataBase: new URL("https://get-abyss.app"),
+  title: "Abyss | Voice-First AI Assistant for iPhone and Mac",
   description:
-    "Your voice-first assistant — for coding, email, calendar, and more. From coding assistant to full personal productivity — all by voice.",
+    "Abyss is a voice-first, iPhone-native AI assistant with secure local execution, a permissioned Mac bridge, and flagship workflows for coding, Gmail, Calendar, Canvas, and web search.",
+  openGraph: {
+    title: "Abyss | Voice-First AI Assistant for iPhone and Mac",
+    description:
+      "Voice-first on iPhone, secure local execution on Mac, and product-grade workflows across coding, Gmail, Calendar, Canvas, and web search.",
+    url: "https://get-abyss.app",
+    siteName: "Abyss",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Abyss logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Abyss | Voice-First AI Assistant for iPhone and Mac",
+    description:
+      "A voice-first assistant with secure local execution, a paired Mac bridge, and real workflows for coding and everyday work.",
+    images: ["/logo.png"],
+  },
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
